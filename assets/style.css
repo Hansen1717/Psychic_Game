@@ -1,0 +1,53 @@
+body {
+    background-image: url("../images/smoke_background-wallpaper.jpg");
+    background-size: cover;
+}
+.container {
+    padding-top: 3%;
+}
+.img-circle {
+    width: 40%;
+    height: auto;
+    margin-bottom: 3%;
+    border: 10px solid #2d3f7d;
+}
+.panel {
+    border: 1px solid #2d3f7d;
+}
+.panel-default .panel-heading {
+    background-color: #2d3f7d;
+    color: #eee;
+}
+.panel-body {
+    background: #d1b1dd;
+}
+h1 {
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
+p {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    body{
+      background: #837285;  
+    }
+    .img-circle {
+        width: 65%;
+        height: auto;
+        margin-bottom: 3%;
+        border: 3px solid #2d3f7d;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
