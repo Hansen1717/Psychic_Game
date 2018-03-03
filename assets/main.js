@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //variables to declare on load
     var wins = 0;
     var losses = 0;
-    var userGuesses = ["Press a key to begin!"];
+    var userGuesses = ["Choose a letter to begin!"];
     var guessesRemaining = 15;
     var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var computerPick;
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
 //Reset the game when win or lose.
     var resetGame = function() {
-        userGuesses = ["Press a key to begin!"];
+        userGuesses = ["Choose a letter to begin!"];
         guessesRemaining = 15;
         generateComputerPick();
         updateGuessesRemaining();
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (letters.indexOf(userInput) > -1) {
             //Update the guesses remaining everytime a key is selected
             guessesRemaining--;
-            if (userGuesses.indexOf("Press a key to begin!") > -1) {
+            if (userGuesses.indexOf("Choose a letter to begin!") > -1) {
                 userGuesses = [];
             };
             updateGuessesRemaining();
